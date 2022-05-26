@@ -1,17 +1,17 @@
+
 """
-    Exemplos
-    # Testando motor
+    Exemplos:
     >>> motor = Motor()
-    >>> motor = Motor.velocidade
+    >>> motor.velocidade
     0
     >>> motor.acelerar()
-    >>> Motor.velocidade
+    >>> motor.velocidade
     1
-    >>> motor.acelerar
-    >>> Motor.velocidade
+    >>> motor.acelerar()
+    >>> motor.velocidade
     2
-    >>> motor.acelerar
-    >>> Motor.velocidade
+    >>> motor.acelerar()
+    >>> motor.velocidade
     3
     >>> motor.frear()
     >>> motor.velocidade
@@ -20,7 +20,7 @@
     >>> motor.velocidade
     0
     >>> # Testando Direcao
-    >>> direcao = direcao()
+    >>> direcao = Direcao()
     >>> direcao.valor
     'Norte'
     >>> direcao.girar_a_direita()
@@ -34,7 +34,7 @@
     'Oeste'
     >>> direcao.girar_a_direita()
     >>> direcao.valor
-    'Norte'
+    'Norte"
     >>> direcao.girar_a_esquerda()
     >>> direcao.valor
     'Oeste'
@@ -70,4 +70,11 @@
     >>> carro.girar_a_esquerda()
     >>> carro.calcular_direcao()
     >>> 'Oeste'
+
 """
+
+class Motor:
+    def __init__(self):
+        self.velocidade = 0
+
+
